@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+html,body,div,ul,ol,li,a,img,span,p,b,input,label,figcaption,figure {
+	margin:0;
+	padding:0;
+	border:0;
+}
+
+ul,ol {
+	list-style:none;
+}
+
+a {
+	text-decoration: none;
+}
+
+table {
+	border-spacing:0;
+	border-collapse:collapse;
+}
+
+
+@media screen and (max-width: 7680px) {
+
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: rgb(106, 105, 105);
+    background-image:url(backgroundland.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white; 
+}
+
+.container {
+    max-width: 64em; 
+    min-height: 18.75em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.25em;
+    padding-bottom: 1.25em;
+}
+
+#pcaption {
+    font-size:x-large;
+    word-break:break-all;
+    font-family:monospace;
+    font-style: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+main {
+    min-height: 18.75em;
+    display: flex;
+    align-items: center;
+}
+
+.futuretiles { 
+    
+    min-height: 18.75em;
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    color: rgb(36, 177, 0);
+    font-family: monospace;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.816);
+}
+
+
+.tile1 {
+    
+    min-height: 18.75em;
+    max-width: 30%;
+}
+
+.tile2 {
+    
+    min-height: 18.75em;
+    max-width: 40%;
+    color: #000;
+}
+
+.tile3 {
+    
+    min-height: 18.75em;
+    max-width: 30%;
+}
+
+/* Might need to change this */
+h1 {
+    font-size: 5em;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bolder;
+    word-spacing: 1.25em;
+}
+
+.portraitsect {
+    max-width: 50%;
+    flex: 2;
+}
+
+.textsect {
+    max-width: 50%;
+    flex: 1;
+}
+
+#juliangaston {
+    border-radius: 50% ;
+    max-width: 15.625em;
+    filter:contrast(1.2);
+    filter: drop-shadow(black .063em .313em .313em);
+}
+
+#JGLogo {
+    filter:drop-shadow(.1em .1em .625em);
+    color: #0ea201;
+}
+
+footer {
+    max-width: auto;
+    background-color: rgba(0, 0, 0, 0.611);
+    color:#0ea201;
+    text-align: center;
+    margin-top: 7.5em;
+    padding-top: .625em;
+    padding-bottom: .625em;
+    word-spacing: 2.813em;
+    /* New Font Used */
+    font-family:'Redressed', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: rgb(255, 255, 255);
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0);
+    padding: .688em 1.563em;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+    filter:brightness(10);
+    border-radius: 1em;
+}
+
+
+#hamnav1 {
+    width: 100%;
+    background: #000;
+}
+
+#hamitems1 { 
+    display: flex; 
+}
+
+#hamitems1 a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+  }
+
+#hamitems1 a:hover { 
+    background: #0ea201; 
+}
+
+#hamnav1 label, #hamburger {
+    display: none; 
+}
+
+#hamnav2 {
+    width: 100%;
+    background: #000;
+  }
+  
+  /* (B) HORIZONTAL MENU ITEMS */
+#hamitems2 { 
+    display: flex;
+}
+#hamitems2 a {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+#hamitems2 a:hover { 
+    background: #0ea201; 
+}
+  
+  /* Hides the hamburger */
+#hamnav2 label, #hamburger { 
+    display: none; 
+}
+
+}
+
+
+/* Style Rules for Mobile Viewport */ 
+@media screen and (max-width: 768px) { 
+    
+header {
+        position: -webkit-sticky; 
+        position: sticky;
+        top: 0; 
+        background-color: black ;
+        height: 150px;
+        width:auto;
+        z-index: 5;
+    }
+
+header img {
+    margin: 0 auto; 
+}
+
+#juliangaston {
+    position: absolute;
+    z-index: 0;
+}
+
+p {
+    color: black;
+}
+
+h2 {
+    color: black;
+}
+
+/* so the map and the picture wont overlap */
+.tile1 {
+    z-index: 1;
+}
+
+#hamitems1 a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+
+#hamitems2 a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+}
+ 
+ 
+#hamnav1 label{ 
+    display: inline-block; 
+    color: rgb(0, 0, 0);
+    background:#000000;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+#hamnav2 label{ 
+    display: inline-block; 
+    color: rgb(0, 0, 0);
+    background:#000000;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+  /* this is supposed to show and hide the menu, currently this is still in progress */
+  #hamitems2 { display: contents; }
+  #hamnav2 input:checked ~ #hamitems2 { display: block; }
+  
+  #hamitems1 { display: contents; }
+  #hamnav1 input:checked ~ #hamitems1 { display: block; }
+}
